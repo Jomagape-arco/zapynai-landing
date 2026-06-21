@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZapynAI — Preview de Branding</title>
+<link rel="icon" href="favicon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+        --bg: #07070b;
+        --purple: #7c3aed;
+        --purple-light: #a855f7;
+        --blue: #00d4ff;
+        --navy: #0a1a31;
+        --text: #f5f5f7;
+        --text-muted: #9c9ca8;
+        --glass-bg: rgba(255,255,255,0.045);
+        --glass-bg-strong: rgba(255,255,255,0.07);
+        --glass-border: rgba(255,255,255,0.09);
+        --radius-lg: 24px;
+        --radius-md: 16px;
+    }
+    body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: 'Inter', sans-serif;
+        line-height: 1.5;
+    }
+    .glow {
+        position: fixed;
+        bottom: -240px; right: -200px;
+        width: 640px; height: 640px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(0,212,255,0.22), transparent 70%);
+        filter: blur(120px);
+        pointer-events: none;
+        z-index: 0;
+    }
+    header {
+        position: relative; z-index: 1;
+        max-width: 1200px; margin: 0 auto;
+        padding: 80px 32px 50px; text-align: center;
+    }
+    header .eyebrow {
+        display: inline-flex; align-items: center; gap: 9px;
+        padding: 8px 16px; border-radius: 999px;
+        background: var(--glass-bg); border: 1px solid var(--glass-border);
+        font-size: 0.82rem; font-weight: 600; color: var(--text-muted);
+        margin-bottom: 22px;
+    }
+    .eyebrow-dot {
+        width: 7px; height: 7px; border-radius: 50%;
+        background: linear-gradient(135deg, var(--purple-light), var(--blue));
+    }
+    header h1 { font-size: 2.6rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 14px; }
+    header p { color: var(--text-muted); font-size: 1.05rem; max-width: 560px; margin: 0 auto; }
+
+    main { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 0 32px 120px; }
+    section { margin-top: 80px; }
+    .section-label {
+        font-size: 0.76rem; font-weight: 700; letter-spacing: 0.08em;
+        text-transform: uppercase; color: var(--blue); margin-bottom: 10px;
+    }
+    section h2 { font-size: 1.7rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 30px; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .card {
+        border-radius: var(--radius-lg); border: 1px solid var(--glass-border);
+        overflow: hidden; background: var(--glass-bg);
+        transition: transform 0.3s cubic-bezier(.16,1,.3,1), border-color 0.3s;
+    }
+    .card:hover { transform: translateY(-4px); border-color: rgba(168,85,247,0.35); }
+    .card .stage { display: flex; align-items: center; justify-content: center; padding: 48px 28px; min-height: 180px; }
+    .card .stage img { max-width: 100%; height: auto; }
+    .stage.transparent {
+        background-image: linear-gradient(45deg, #1c1c24 25%, transparent 25%), linear-gradient(-45deg, #1c1c24 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #1c1c24 75%), linear-gradient(-45deg, transparent 75%, #1c1c24 75%);
+        background-size: 20px 20px;
+        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+    .stage.dark { background: var(--navy); }
+    .stage.light { background: #ffffff; }
+    .card .caption {
+        padding: 16px 20px; border-top: 1px solid var(--glass-border);
+        display: flex; align-items: center; justify-content: space-between;
+        font-size: 0.86rem;
+    }
+    .card .caption .name { font-weight: 700; }
+    .card .caption .meta { color: var(--text-muted); font-size: 0.76rem; }
+
+    .avatar-row { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
+    .avatar-demo { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+    .avatar-demo img { width: 140px; height: 140px; }
+    .avatar-demo img.circle { border-radius: 50%; }
+    .avatar-demo span { font-size: 0.8rem; color: var(--text-muted); }
+
+    .browser-mock {
+        border-radius: var(--radius-md);
+        border: 1px solid var(--glass-border);
+        background: var(--glass-bg-strong);
+        overflow: hidden;
+        max-width: 360px;
+    }
+    .browser-bar {
+        display: flex; align-items: center; gap: 10px;
+        padding: 12px 16px; background: rgba(0,0,0,0.25);
+        border-bottom: 1px solid var(--glass-border);
+    }
+    .browser-tab {
+        display: flex; align-items: center; gap: 8px;
+        background: var(--glass-bg-strong);
+        border-radius: 8px; padding: 6px 14px;
+        font-size: 0.78rem; color: var(--text-muted);
+    }
+    .browser-tab img { width: 16px; height: 16px; }
+    .browser-body { padding: 50px 20px; text-align: center; }
+    .browser-body img { width: 64px; height: 64px; }
+
+    footer { text-align: center; padding: 50px 32px; color: var(--text-muted); font-size: 0.84rem; border-top: 1px solid var(--glass-border); position: relative; z-index: 1; }
+    footer a { color: var(--blue); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="glow"></div>
+
+<header>
+    <div class="eyebrow"><span class="eyebrow-dot"></span>Brand Preview</div>
+    <h1>ZapynAI — Branding Preview</h1>
+    <p>Vista previa de todos los assets oficiales de marca: logotipos, avatares y favicon.</p>
+</header>
+
+<main>
+
+    <section>
+        <div class="section-label">Logotipos</div>
+        <h2>Logo horizontal — 3 versiones</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="stage transparent"><img src="logo-horizontal-principal.png" alt="Logo principal transparente"></div>
+                <div class="caption"><span class="name">Principal</span><span class="meta">PNG · 3000×900 · transparente</span></div>
+            </div>
+            <div class="card">
+                <div class="stage dark"><img src="logo-version-oscura.png" alt="Logo versión oscura"></div>
+                <div class="caption"><span class="name">Versión oscura</span><span class="meta">PNG · 3000×900 · #0A1A31</span></div>
+            </div>
+            <div class="card">
+                <div class="stage light"><img src="logo-version-clara.png" alt="Logo versión clara"></div>
+                <div class="caption"><span class="name">Versión clara</span><span class="meta">PNG · 3000×900 · #FFFFFF</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-label">Isotipo</div>
+        <h2>Marca Z aislada</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="stage transparent"><img src="isotype-z.png" alt="Isotipo Z" style="height:140px;"></div>
+                <div class="caption"><span class="name">Isotipo maestro</span><span class="meta">PNG · transparente</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-label">Redes sociales</div>
+        <h2>Avatares 1024×1024</h2>
+        <div class="card" style="padding: 36px 28px;">
+            <div class="avatar-row">
+                <div class="avatar-demo">
+                    <img src="avatar-claro-1024.png" alt="Avatar claro cuadrado">
+                    <span>Claro · esquinas redondeadas</span>
+                </div>
+                <div class="avatar-demo">
+                    <img src="avatar-claro-1024.png" alt="Avatar claro circular" class="circle">
+                    <span>Claro · vista circular</span>
+                </div>
+                <div class="avatar-demo">
+                    <img src="avatar-oscuro-1024.png" alt="Avatar oscuro cuadrado">
+                    <span>Oscuro · esquinas redondeadas</span>
+                </div>
+                <div class="avatar-demo">
+                    <img src="avatar-oscuro-1024.png" alt="Avatar oscuro circular" class="circle">
+                    <span>Oscuro · vista circular</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-label">Favicon</div>
+        <h2>Favicon 512×512</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="stage transparent"><img src="favicon-512.png" alt="Favicon" style="height:120px;"></div>
+                <div class="caption"><span class="name">Favicon</span><span class="meta">PNG · 512×512 · transparente</span></div>
+            </div>
+            <div class="card" style="display:flex; align-items:center; justify-content:center;">
+                <div class="browser-mock">
+                    <div class="browser-bar">
+                        <div class="browser-tab"><img src="favicon-512.png" alt="favicon tab"> zapynai.com</div>
+                    </div>
+                    <div class="browser-body"><img src="favicon-512.png" alt="favicon grande"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    ZapynAI Brand Kit · <a href="kit-de-marca.html">Ver guía de marca completa →</a>
+</footer>
+
+</body>
+</html>

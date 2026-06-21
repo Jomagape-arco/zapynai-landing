@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habitaciones en Pozuelo — Solicitar información</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f1f5f9;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      width: 100%;
+      max-width: 560px;
+      overflow: hidden;
+    }
+
+    .card-header {
+      background: linear-gradient(135deg, #1e40af, #3b82f6);
+      color: white;
+      padding: 32px 36px 28px;
+    }
+
+    .card-header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .card-header p {
+      font-size: 0.9rem;
+      opacity: 0.85;
+      line-height: 1.5;
+    }
+
+    form {
+      padding: 32px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .field-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    label span {
+      color: #ef4444;
+      margin-left: 2px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: #1e293b;
+      background: #f8fafc;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59,130,246,0.12);
+      background: #fff;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    select {
+      cursor: pointer;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #1e40af, #3b82f6);
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.1s;
+      margin-top: 4px;
+    }
+
+    .btn:hover { opacity: 0.92; }
+    .btn:active { transform: scale(0.98); }
+    .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    .feedback {
+      display: none;
+      padding: 14px 18px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .feedback.success {
+      background: #f0fdf4;
+      border: 1.5px solid #86efac;
+      color: #166534;
+    }
+
+    .feedback.error {
+      background: #fef2f2;
+      border: 1.5px solid #fca5a5;
+      color: #991b1b;
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 0.78rem;
+      color: #94a3b8;
+      padding: 0 36px 24px;
+    }
+
+    @media (max-width: 480px) {
+      .card-header { padding: 24px 20px 20px; }
+      form { padding: 24px 20px; }
+      .field-row { grid-template-columns: 1fr; }
+      .footer-note { padding: 0 20px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <div class="card-header">
+    <h1>Solicitar información sobre habitaciones</h1>
+    <p>Rellena el formulario y te contactamos para mostrarte las habitaciones disponibles en Pozuelo de Alarcón.</p>
+  </div>
+
+  <form id="leadForm" novalidate>
+
+    <div class="field-row">
+      <div class="field">
+        <label for="nombre">Nombre completo <span>*</span></label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      </div>
+      <div class="field">
+        <label for="telefono">Teléfono <span>*</span></label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="email">Email <span>*</span></label>
+      <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+    </div>
+
+    <div class="field-row">
+      <div class="field">
+        <label for="perfil">Perfil <span>*</span></label>
+        <select id="perfil" name="perfil" required>
+          <option value="">Selecciona...</option>
+          <option value="Estudiante">Estudiante</option>
+          <option value="Trabajador">Trabajador</option>
+          <option value="Prácticas">Prácticas</option>
+          <option value="Remoto">Trabajador remoto</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="fechaEntrada">Fecha de entrada <span>*</span></label>
+        <input type="date" id="fechaEntrada" name="fechaEntrada" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="duracion">Duración estimada <span>*</span></label>
+      <select id="duracion" name="duracion" required>
+        <option value="">Selecciona...</option>
+        <option value="1-3 meses">1 – 3 meses</option>
+        <option value="3-6 meses">3 – 6 meses</option>
+        <option value="6-12 meses">6 – 12 meses</option>
+        <option value="Más de 1 año">Más de 1 año</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="mensaje">Mensaje o preguntas</label>
+      <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué buscas, qué universidad o empresa, si tienes mascotas..."></textarea>
+    </div>
+
+    <div class="feedback" id="feedback"></div>
+
+    <button type="submit" class="btn" id="submitBtn">Enviar solicitud</button>
+
+  </form>
+
+  <p class="footer-note">Tus datos se usan únicamente para gestionar tu solicitud de habitación.</p>
+</div>
+
+<script>
+  const WEBHOOK_URL = 'https://n8n-n8n-n8n.pkzggw.easypanel.host/webhook/leads-habitaciones';
+
+  const form = document.getElementById('leadForm');
+  const btn  = document.getElementById('submitBtn');
+  const fb   = document.getElementById('feedback');
+
+  // Set min date to today
+  document.getElementById('fechaEntrada').min = new Date().toISOString().split('T')[0];
+
+  function showFeedback(type, msg) {
+    fb.className = 'feedback ' + type;
+    fb.textContent = msg;
+    fb.style.display = 'block';
+    fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    if (!form.checkValidity()) {
+      form.querySelectorAll(':invalid').forEach(el => el.style.borderColor = '#ef4444');
+      showFeedback('error', 'Por favor, completa todos los campos obligatorios.');
+      return;
+    }
+
+    // Reset borders
+    form.querySelectorAll('input,select,textarea').forEach(el => el.style.borderColor = '');
+
+    const payload = {
+      nombre:      document.getElementById('nombre').value.trim(),
+      email:       document.getElementById('email').value.trim(),
+      telefono:    document.getElementById('telefono').value.trim(),
+      perfil:      document.getElementById('perfil').value,
+      fechaEntrada:document.getElementById('fechaEntrada').value,
+      duracion:    document.getElementById('duracion').value,
+      mensaje:     document.getElementById('mensaje').value.trim(),
+    };
+
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+    fb.style.display = 'none';
+
+    try {
+      const res = await fetch(WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+
+      if (res.ok) {
+        showFeedback('success', '¡Solicitud enviada! Nos pondremos en contacto contigo pronto.');
+        form.reset();
+      } else {
+        showFeedback('error', `Error al enviar (${res.status}). Inténtalo de nuevo.`);
+      }
+    } catch (err) {
+      showFeedback('error', 'No se pudo conectar. Comprueba tu conexión e inténtalo de nuevo.');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Enviar solicitud';
+    }
+  });
+</script>
+
+</body>
+</html>
