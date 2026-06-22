@@ -184,7 +184,7 @@ if (contactForm) {
     const chatForm = document.getElementById('chatForm');
     const chatInputField = document.getElementById('chatInputField');
 
-    if (!triggerBtn || !chatWindow) {
+    if (!triggerBtn || !chatWindow || !chatBadge || !closeBtn || !messagesEl || !chatForm || !chatInputField) {
         return;
     }
 
@@ -223,9 +223,12 @@ if (contactForm) {
         }
     }
 
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
     function openChat() {
         chatWindow.classList.add('open');
         chatBadge.classList.add('hide');
+        triggerBtn.classList.add('chat-trigger-hidden');
 
         if (!hasOpenedBefore) {
             hasOpenedBefore = true;
@@ -233,11 +236,17 @@ if (contactForm) {
             setTimeout(() => addMessage('¿En qué puedo ayudarte hoy? Estoy aquí para resolver tus dudas.', 'bot'), 1500);
         }
 
-        setTimeout(() => chatInputField.focus(), 300);
+        // En móvil NO forzamos el foco: abrir el teclado automáticamente es lo que
+        // provoca el solape con el botón de enviar, y Safari iOS además ignora el
+        // foco programático cuando no ocurre de forma síncrona en el propio toque.
+        if (!isTouchDevice) {
+            setTimeout(() => chatInputField.focus(), 300);
+        }
     }
 
     function closeChat() {
         chatWindow.classList.remove('open');
+        triggerBtn.classList.remove('chat-trigger-hidden');
     }
 
     triggerBtn.addEventListener('click', () => {

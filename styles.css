@@ -1638,7 +1638,7 @@ a {
     position: fixed;
     bottom: 170px;
     right: 20px;
-    z-index: 9000;
+    z-index: 9001;
     width: 360px;
     height: 500px;
     max-height: 500px;
@@ -1652,15 +1652,28 @@ a {
     flex-direction: column;
     overflow: hidden;
     opacity: 0;
+    visibility: hidden;
     transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    will-change: opacity, transform;
     pointer-events: none;
-    transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
+    transition: opacity 0.25s var(--ease), transform 0.25s var(--ease), visibility 0s linear 0.25s;
 }
 
 .chat-window.open {
     opacity: 1;
+    visibility: visible;
     transform: translateY(0);
+    -webkit-transform: translateY(0);
     pointer-events: auto;
+    transition: opacity 0.25s var(--ease), transform 0.25s var(--ease), visibility 0s linear 0s;
+}
+
+.chat-trigger-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.85);
+    transition: opacity 0.2s var(--ease), transform 0.2s var(--ease);
 }
 
 .chat-window-header {
@@ -1829,6 +1842,8 @@ a {
 }
 
 .chat-window-input input {
+    position: relative;
+    z-index: 1;
     flex: 1 1 auto;
     min-width: 0;
     background: #1a1a2e;
@@ -1839,6 +1854,7 @@ a {
     font-family: inherit;
     font-size: 0.88rem;
     outline: none;
+    touch-action: manipulation;
     transition: border-color 0.25s var(--ease);
 }
 
@@ -1851,6 +1867,8 @@ a {
 }
 
 .chat-send-btn {
+    position: relative;
+    z-index: 2;
     flex-shrink: 0;
     width: 38px;
     height: 38px;
@@ -1871,7 +1889,7 @@ a {
 
 @media (max-width: 768px) {
     .chat-trigger {
-        z-index: 9998;
+        z-index: 9000;
     }
 
     .chat-window {
@@ -1882,7 +1900,7 @@ a {
         height: 70vh;
         height: min(70dvh, 500px);
         max-height: 500px;
-        z-index: 9997;
+        z-index: 9001;
     }
 
     .chat-window-messages {
