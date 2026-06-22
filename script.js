@@ -148,7 +148,7 @@ if (contactForm) {
         }
         submitBtn.disabled = true;
 
-        const webhookUrl = 'https://n8n-n8n-n8n.pkzggw.easypanel.host/webhook-test/zapynai-contacto';
+        const webhookUrl = 'https://n8n-n8n-n8n.pkzggw.easypanel.host/webhook/zapynai-contacto';
         console.log('[ZapynAI form] enviando a:', webhookUrl, 'payload:', formData);
 
         try {
