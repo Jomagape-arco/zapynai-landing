@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZapynAI — Más clientes, más citas y más ventas para tu negocio</title>
+    <meta name="description" content="ZapynAI es la agencia que capta clientes, diseña embudos de venta, lanza tus anuncios y automatiza el seguimiento para que consigas más citas y más ventas.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="logo">
+            <img src="assets/brand/zapynai-isotype.png" alt="ZapynAI" class="logo-mark">
+            ZapynAI
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#como-funciona">Cómo funciona</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#sectores">Sectores</a>
+            <a href="#resultados">Resultados</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#contacto" class="btn-nav">Solicita tu diagnóstico gratuito</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<section class="hero" id="hero">
+    <div class="hero-glow hero-glow-purple"></div>
+    <div class="hero-glow hero-glow-blue"></div>
+
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="eyebrow reveal">
+                <span class="eyebrow-dot"></span>
+                Agencia de Captación, Ventas y Automatización
+            </div>
+
+            <h1 class="reveal" style="--delay: 0.08s">
+                Consigue más clientes, citas y ventas <span class="text-gradient">sin esfuerzo extra</span>
+            </h1>
+
+            <p class="reveal" style="--delay: 0.16s">
+                Diseñamos embudos de captación, lanzamos tus anuncios y automatizamos el seguimiento
+                de cada cliente potencial para que tu negocio venda más todos los días, incluso mientras duermes.
+            </p>
+
+            <div class="buttons reveal" style="--delay: 0.24s">
+                <a href="#contacto" class="btn-primary" id="heroPrimaryCta">
+                    <span>Descubre cómo conseguir más clientes</span>
+                </a>
+                <a href="#como-funciona" class="btn-secondary">
+                    Ver cómo funciona
+                </a>
+            </div>
+
+            <div class="hero-stats reveal" style="--delay: 0.32s">
+                <div class="stat">
+                    <strong>+150</strong>
+                    <span>Negocios que ya venden más</span>
+                </div>
+                <div class="stat">
+                    <strong>98%</strong>
+                    <span>Clientes satisfechos</span>
+                </div>
+                <div class="stat">
+                    <strong>24/7</strong>
+                    <span>Atención sin descanso</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual reveal" style="--delay: 0.2s">
+            <div class="dashboard-card">
+                <div class="dashboard-header">
+                    <div class="dashboard-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="dashboard-title">ZapynAI · Panel en vivo</span>
+                    <span class="dashboard-live"><i></i>En vivo</span>
+                </div>
+
+                <div class="dashboard-body">
+                    <div class="chat-preview">
+                        <div class="chat-bubble bot">
+                            <p>Hola 👋 ¿quieres agendar tu cita ahora mismo?</p>
+                        </div>
+                        <div class="chat-bubble user">
+                            <p>Sí, resérvame un hueco esta semana</p>
+                        </div>
+                        <div class="chat-typing">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <span class="metric-text">Primer sistema activo en menos de 7 días</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-text">Respuesta automática en menos de 60 segundos</span>
+                        </div>
+                    </div>
+
+                    <div class="chart">
+                        <div class="bar" style="--h:38%"></div>
+                        <div class="bar" style="--h:62%"></div>
+                        <div class="bar" style="--h:48%"></div>
+                        <div class="bar" style="--h:80%"></div>
+                        <div class="bar" style="--h:58%"></div>
+                        <div class="bar" style="--h:95%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="floating-badge badge-top">
+                <i class="pulse-dot"></i> Disponible 24/7
+            </div>
+            <div class="floating-badge badge-bottom">
+                ⚡ Cero clientes perdidos
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="proof">
+    <div class="proof-container reveal-scroll">
+        <h2>Experiencia real en automatización y captación de clientes</h2>
+
+        <div class="proof-grid">
+            <div class="proof-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Automatización de captación de leads
+            </div>
+            <div class="proof-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Gestión automática de WhatsApp y seguimiento
+            </div>
+            <div class="proof-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Sistemas reales funcionando en negocios de Madrid
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="problems" id="problemas">
+    <div class="problems-glow"></div>
+
+    <div class="problems-container">
+        <div class="section-header reveal-scroll">
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Diagnóstico
+            </div>
+            <h2>Problemas que resolvemos</h2>
+            <p>Identificamos los cuellos de botella que frenan el crecimiento de tu negocio.</p>
+        </div>
+
+        <div class="problems-grid">
+            <div class="problem-card reveal-scroll" style="--delay: 0.05s">
+                <span class="problem-number">01</span>
+                <div class="problem-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                </div>
+                <h3>Pierdes clientes por responder tarde</h3>
+                <p>El cliente que recibe respuesta primero es, casi siempre, el que compra. Cada minuto de tardanza es una venta que se va a tu competencia.</p>
+            </div>
+
+            <div class="problem-card reveal-scroll" style="--delay: 0.15s">
+                <span class="problem-number">02</span>
+                <div class="problem-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+                        <polyline points="17 1 21 5 17 9"></polyline>
+                        <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+                        <polyline points="7 23 3 19 7 15"></polyline>
+                        <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+                    </svg>
+                </div>
+                <h3>Tu equipo dedica horas a tareas repetitivas</h3>
+                <p>Responder las mismas preguntas y agendar citas a mano le resta horas productivas a tu equipo cada semana, horas que podrían dedicarse a vender.</p>
+            </div>
+
+            <div class="problem-card reveal-scroll" style="--delay: 0.25s">
+                <span class="problem-number">03</span>
+                <div class="problem-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                        <line x1="12" y1="9" x2="12" y2="13"></line>
+                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                    </svg>
+                </div>
+                <h3>No tienes seguimiento automático de leads</h3>
+                <p>Sin un sistema que insista por ti, la mayoría de los leads se enfrían y terminan comprándole a otro negocio que sí les dio seguimiento.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="funnel" id="como-funciona">
+    <div class="funnel-container">
+        <div class="section-header reveal-scroll">
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                El sistema
+            </div>
+            <h2>Cómo funciona el sistema ZapynAI</h2>
+            <p>Tres fases conectadas que convierten desconocidos en clientes, de forma predecible y sin trabajo manual.</p>
+        </div>
+
+        <div class="funnel-grid">
+            <div class="funnel-step reveal-scroll" style="--delay: 0.05s">
+                <span class="funnel-number">01</span>
+                <h3>Captación</h3>
+                <p>Atraemos la atención de las personas correctas, en el momento en que están listas para decidir.</p>
+                <div class="funnel-tags">
+                    <span class="funnel-tag">Meta Ads</span>
+                    <span class="funnel-tag">Google Ads</span>
+                    <span class="funnel-tag">Landing Pages</span>
+                    <span class="funnel-tag">WhatsApp</span>
+                </div>
+            </div>
+
+            <div class="funnel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <polyline points="13 5 20 12 13 19"></polyline>
+                </svg>
+            </div>
+
+            <div class="funnel-step reveal-scroll" style="--delay: 0.15s">
+                <span class="funnel-number">02</span>
+                <h3>Nutrición</h3>
+                <p>Mientras tu negocio sigue funcionando, el sistema mantiene viva la conversación con cada contacto.</p>
+                <div class="funnel-tags">
+                    <span class="funnel-tag">Seguimiento automático</span>
+                    <span class="funnel-tag">Email marketing</span>
+                    <span class="funnel-tag">WhatsApp automatizado</span>
+                    <span class="funnel-tag">Recordatorios</span>
+                </div>
+            </div>
+
+            <div class="funnel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <polyline points="13 5 20 12 13 19"></polyline>
+                </svg>
+            </div>
+
+            <div class="funnel-step reveal-scroll" style="--delay: 0.25s">
+                <span class="funnel-number">03</span>
+                <h3>Conversión</h3>
+                <p>Convertimos el interés en una cita en el calendario o una venta cerrada.</p>
+                <div class="funnel-tags">
+                    <span class="funnel-tag">Reserva de citas</span>
+                    <span class="funnel-tag">Llamadas</span>
+                    <span class="funnel-tag">Seguimiento comercial</span>
+                    <span class="funnel-tag">Cierre de ventas</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="workflow" id="como-trabajamos">
+    <div class="workflow-container">
+        <div class="section-header reveal-scroll">
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Metodología
+            </div>
+            <h2>Cómo trabajamos</h2>
+            <p>Implementamos un sistema completo para que tu negocio atraiga, gestione y convierta más clientes.</p>
+        </div>
+
+        <div class="workflow-list">
+            <div class="workflow-step reveal-scroll" style="--delay: 0.05s">
+                <div class="workflow-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+                <div class="workflow-content">
+                    <span class="workflow-step-label">Paso 01</span>
+                    <h3>Analizamos tu negocio</h3>
+                    <p>Revisamos tu proceso de captación, ventas y seguimiento para detectar oportunidades de mejora.</p>
+                </div>
+            </div>
+
+            <div class="workflow-step reveal-scroll" style="--delay: 0.15s">
+                <div class="workflow-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                </div>
+                <div class="workflow-content">
+                    <span class="workflow-step-label">Paso 02</span>
+                    <h3>Diseñamos el sistema</h3>
+                    <p>Definimos el funnel, automatizaciones, CRM y canales adecuados para tu negocio.</p>
+                </div>
+            </div>
+
+            <div class="workflow-step reveal-scroll" style="--delay: 0.25s">
+                <div class="workflow-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </div>
+                <div class="workflow-content">
+                    <span class="workflow-step-label">Paso 03</span>
+                    <h3>Implementamos</h3>
+                    <p>Configuramos campañas, WhatsApp, seguimiento y herramientas necesarias.</p>
+                </div>
+            </div>
+
+            <div class="workflow-step reveal-scroll" style="--delay: 0.35s">
+                <div class="workflow-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                        <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                </div>
+                <div class="workflow-content">
+                    <span class="workflow-step-label">Paso 04</span>
+                    <h3>Escalamos</h3>
+                    <p>Optimizamos continuamente para conseguir más clientes y mejores resultados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="growth services" id="servicios">
+    <div class="growth-container">
+        <div class="section-header reveal-scroll">
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Servicios
+            </div>
+            <h2>Todo lo que necesitas para vender más, en un solo sistema</h2>
+            <p>Cada servicio resuelve una parte del camino entre un desconocido y un cliente.</p>
+        </div>
+
+        <div class="growth-grid">
+            <div class="growth-card reveal-scroll" style="--delay: 0.05s">
+                <div class="growth-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                    </svg>
+                </div>
+                <h3>Automatización de WhatsApp</h3>
+                <p>Respondemos, agendamos y damos seguimiento por WhatsApp las 24 horas, sin que tengas que estar pendiente del móvil.</p>
+            </div>
+
+            <div class="growth-card reveal-scroll" style="--delay: 0.1s">
+                <div class="growth-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                        <polygon points="3 4 21 4 14 12.5 14 19 10 21 10 12.5 3 4"></polygon>
+                    </svg>
+                </div>
+                <h3>Embudos de ventas</h3>
+                <p>Diseñamos el camino exacto que convierte a un visitante en cliente, paso a paso.</p>
+            </div>
+
+            <div class="growth-card reveal-scroll" style="--delay: 0.15s">
+                <div class="growth-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <h3>CRM y seguimiento de leads</h3>
+                <p>Ningún contacto se pierde ni se enfría: cada lead queda organizado y con seguimiento activo.</p>
+            </div>
+
+            <div class="growth-card reveal-scroll" style="--delay: 0.2s">
+                <div class="growth-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="8.5" cy="7" r="4"></circle>
+                        <polyline points="17 11 19 13 23 9"></polyline>
+                    </svg>
+                </div>
+                <h3>Agentes IA</h3>
+                <p>Asistentes que cualifican, responden y agendan por ti, como un comercial que nunca descansa.</p>
+            </div>
+
+            <div class="growth-card reveal-scroll" style="--delay: 0.25s">
+                <div class="growth-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                </div>
+                <h3>Meta Ads</h3>
+                <p>Campañas en Instagram y Facebook diseñadas para llevar clientes listos para comprar directo a tu WhatsApp o tu agenda, no solo likes.</p>
+                <div class="funnel-tags">
+                    <span class="funnel-tag">Segmentación de audiencias</span>
+                    <span class="funnel-tag">Creatividades optimizadas</span>
+                    <span class="funnel-tag">Retargeting</span>
+                    <span class="funnel-tag">Reporte de resultados</span>
+                </div>
+            </div>
+
+            <div class="growth-card reveal-scroll" style="--delay: 0.3s">
+                <div class="growth-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                        <path d="M12 20h9"></path>
+                        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                    </svg>
+                </div>
+                <h3>Marketing digital</h3>
+                <p>Estrategia, contenido y posicionamiento que construyen una marca que tus clientes recuerdan, buscan y eligen frente a la competencia.</p>
+                <div class="funnel-tags">
+                    <span class="funnel-tag">Estrategia de contenido</span>
+                    <span class="funnel-tag">Redes sociales</span>
+                    <span class="funnel-tag">SEO</span>
+                    <span class="funnel-tag">Branding</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sectors" id="sectores">
+    <div class="sectors-glow"></div>
+
+    <div class="sectors-container">
+        <div class="section-header reveal-scroll">
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Sectores
+            </div>
+            <h2>Negocios que ya crecen con ZapynAI</h2>
+            <p>Adaptamos el sistema a cómo tu sector capta clientes y agenda citas.</p>
+        </div>
+
+        <div class="sectors-grid">
+            <div class="sector-card reveal-scroll" style="--delay: 0.04s">
+                <div class="sector-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                </div>
+                <span>Clínicas</span>
+            </div>
+
+            <div class="sector-card reveal-scroll" style="--delay: 0.08s">
+                <div class="sector-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </div>
+                <span>Inmobiliarias</span>
+            </div>
+
+            <div class="sector-card reveal-scroll" style="--delay: 0.12s">
+                <div class="sector-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                </div>
+                <span>Centros de estética</span>
+            </div>
+
+            <div class="sector-card reveal-scroll" style="--delay: 0.16s">
+                <div class="sector-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                        <line x1="6" y1="1" x2="6" y2="4"></line>
+                        <line x1="10" y1="1" x2="10" y2="4"></line>
+                        <line x1="14" y1="1" x2="14" y2="4"></line>
+                    </svg>
+                </div>
+                <span>Restaurantes</span>
+            </div>
+
+            <div class="sector-card reveal-scroll" style="--delay: 0.2s">
+                <div class="sector-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                </div>
+                <span>Despachos profesionales</span>
+            </div>
+
+            <div class="sector-card reveal-scroll" style="--delay: 0.24s">
+                <div class="sector-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                </div>
+                <span>Academias</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="growth why" id="por-que-elegir">
+    <div class="growth-container">
+        <div class="section-header reveal-scroll">
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Por qué nosotros
+            </div>
+            <h2>¿Por qué elegir ZapynAI?</h2>
+            <p>Tres razones por las que cada vez más negocios nos eligen para crecer.</p>
+        </div>
+
+        <div class="growth-grid">
+            <div class="growth-card reveal-scroll" style="--delay: 0.05s">
+                <div class="growth-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                        <path d="M22 2L11 13"></path>
+                        <path d="M22 2l-7 20-4-9-9-4 20-7z"></path>
+                    </svg>
+                </div>
+                <h3>Implementación rápida</h3>
+                <p>Lanzamos tu solución en días, no en meses.</p>
+            </div>
+
+            <div class="growth-card reveal-scroll" style="--delay: 0.15s">
+                <div class="growth-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <h3>Sin conocimientos técnicos</h3>
+                <p>Nos encargamos de toda la configuración y puesta en marcha.</p>
+            </div>
+
+            <div class="growth-card reveal-scroll" style="--delay: 0.25s">
+                <div class="growth-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                        <line x1="4" y1="21" x2="4" y2="14"></line>
+                        <line x1="4" y1="10" x2="4" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12" y2="3"></line>
+                        <line x1="20" y1="21" x2="20" y2="16"></line>
+                        <line x1="20" y1="12" x2="20" y2="3"></line>
+                        <line x1="1" y1="14" x2="7" y2="14"></line>
+                        <line x1="9" y1="8" x2="15" y2="8"></line>
+                        <line x1="17" y1="16" x2="23" y2="16"></line>
+                    </svg>
+                </div>
+                <h3>Soluciones a medida</h3>
+                <p>Adaptamos cada automatización a las necesidades reales de tu negocio.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="results" id="resultados">
+    <div class="results-container">
+        <div class="section-header reveal-scroll">
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Resultados
+            </div>
+            <h2>Esto es lo que cambia en tu negocio con ZapynAI</h2>
+            <p>Así es como tu negocio empieza a vender más sin que tengas que hacer nada extra.</p>
+        </div>
+
+        <div class="results-grid">
+            <div class="result-card reveal-scroll" style="--delay: 0.05s">
+                <div class="result-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                </div>
+                <span class="result-value">24/7</span>
+                <span class="result-label">Atención automática, sin horarios</span>
+            </div>
+
+            <div class="result-card reveal-scroll" style="--delay: 0.15s">
+                <div class="result-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </div>
+                <span class="result-value">Inmediata</span>
+                <span class="result-label">Respuesta a cada cliente en segundos</span>
+            </div>
+
+            <div class="result-card reveal-scroll" style="--delay: 0.25s">
+                <div class="result-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                        <polyline points="17 1 21 5 17 9"></polyline>
+                        <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+                        <polyline points="7 23 3 19 7 15"></polyline>
+                        <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+                    </svg>
+                </div>
+                <span class="result-value">Automático</span>
+                <span class="result-label">Seguimiento de leads sin que se te olvide ninguno</span>
+            </div>
+
+            <div class="result-card reveal-scroll" style="--delay: 0.35s">
+                <div class="result-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                        <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                </div>
+                <span class="result-value">Más ventas</span>
+                <span class="result-label">Más oportunidades de venta por conversación</span>
+            </div>
+        </div>
+
+        <p class="results-note reveal-scroll">Resultados orientativos según la implementación en tu negocio.</p>
+    </div>
+</section>
+
+<section class="case-study" id="caso-practico">
+    <div class="case-container">
+        <div class="section-header reveal-scroll">
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Caso práctico
+            </div>
+            <h2>Así lo aplicamos en un negocio real</h2>
+            <p>Un ejemplo real de cómo automatizamos la captación y gestión de clientes.</p>
+        </div>
+
+        <div class="case-card reveal-scroll">
+            <div class="case-tag">📍 Madrid · Alquiler de habitaciones</div>
+            <h3>Automatización de captación y gestión de visitas</h3>
+
+            <div class="case-grid">
+                <div class="case-objectives">
+                    <span class="case-label">Objetivos</span>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Captar leads automáticamente
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Gestionar consultas por WhatsApp
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Organizar visitas
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Ahorrar tiempo en tareas repetitivas
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="case-result">
+                    <span class="case-label">Resultado</span>
+                    <div class="case-result-box">
+                        <div class="growth-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="24" height="24">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                        </div>
+                        <p>Proceso más rápido, organizado y escalable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contacto">
+    <div class="hero-glow hero-glow-purple"></div>
+
+    <div class="contact-container">
+        <div class="contact-grid">
+            <div class="contact-info reveal-scroll">
+                <div class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    Contacto
+                </div>
+                <h2>Empecemos a conseguirte más clientes</h2>
+                <p>Cuéntanos sobre tu negocio y te mostraremos, en una llamada de 15 minutos, cómo conseguir más clientes y más citas este mismo mes.</p>
+
+                <ul class="contact-benefits">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Respuesta en menos de 24 horas
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Diagnóstico gratuito de tu negocio
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Plan de automatización a tu medida
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Sin compromiso ni letra pequeña
+                    </li>
+                </ul>
+
+                <div class="contact-social">
+                    <span class="contact-social-label">Síguenos</span>
+                    <div class="social-links">
+                        <a href="https://instagram.com/zapynai" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/zapynai" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/zapynaiofficial" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://tiktok.com/@zapynai" target="_blank" rel="noopener" class="social-link" aria-label="TikTok">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13 3v11.5a3.5 3.5 0 1 1-3.5-3.5"></path>
+                                <path d="M13 7a4 4 0 0 0 4 4"></path>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/34XXXXXXXXX" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
+                            <svg viewBox="0 0 32 32" fill="currentColor" stroke="none">
+                                <path d="M16.004 3C9.377 3 4 8.377 4 15.004c0 2.65.86 5.1 2.32 7.094L4 29l7.084-2.278a11.93 11.93 0 0 0 4.92 1.04h.005c6.627 0 12.004-5.377 12.004-12.004C28.013 8.377 22.636 3 16.004 3zm0 21.81h-.004a9.77 9.77 0 0 1-4.98-1.365l-.357-.213-3.708 1.193 1.213-3.614-.232-.372a9.76 9.76 0 0 1-1.5-5.22c0-5.404 4.395-9.8 9.804-9.8 2.62 0 5.082 1.022 6.93 2.876a9.73 9.73 0 0 1 2.87 6.928c0 5.404-4.396 9.8-9.8 9.8zm5.36-7.34c-.293-.146-1.734-.856-2.003-.954-.27-.098-.466-.146-.662.147-.196.293-.76.954-.932 1.15-.172.196-.343.22-.636.073-.293-.147-1.236-.456-2.354-1.453-.87-.776-1.458-1.735-1.63-2.028-.172-.293-.018-.452.128-.598.132-.131.293-.343.44-.514.146-.172.195-.293.293-.49.098-.196.05-.367-.024-.514-.073-.147-.662-1.595-.908-2.184-.24-.575-.484-.497-.662-.506l-.564-.01c-.196 0-.514.073-.783.367-.27.293-1.03 1.006-1.03 2.454 0 1.448 1.054 2.847 1.2 3.043.146.196 2.073 3.165 5.022 4.438.702.303 1.25.484 1.677.62.704.224 1.345.192 1.852.117.565-.084 1.734-.708 1.978-1.392.244-.684.244-1.27.171-1.392-.073-.122-.268-.196-.562-.342z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-card reveal-scroll" style="--delay: 0.15s">
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="business">Negocio / Empresa</label>
+                        <input type="text" id="business" name="business" placeholder="Nombre de tu negocio" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">WhatsApp</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+34 600 000 000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="goal">¿Qué te gustaría conseguir?</label>
+                        <select id="goal" name="goal" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="mas-clientes">Conseguir más clientes</option>
+                            <option value="mas-citas">Conseguir más citas</option>
+                            <option value="mas-ventas">Aumentar mis ventas</option>
+                            <option value="ahorrar-tiempo">Ahorrar tiempo en tareas repetitivas</option>
+                            <option value="whatsapp">Automatizar mi WhatsApp</option>
+                            <option value="seguimiento">Dar seguimiento automático a mis leads</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="referral">¿Cómo nos has conocido?</label>
+                        <select id="referral" name="referral" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="google">Google</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="linkedin">LinkedIn</option>
+                            <option value="tiktok">TikTok</option>
+                            <option value="recomendacion">Recomendación</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-form">
+                        <span>Solicitar diagnóstico gratuito</span>
+                    </button>
+
+                    <div class="form-trust">
+                        <span>⏱ Respuesta &lt;24h</span>
+                        <span>🎁 Diagnóstico gratis</span>
+                        <span>🔒 Sin compromiso</span>
+                    </div>
+                </form>
+
+                <div class="form-success" id="formSuccess">
+                    <div class="form-success-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h3>¡Listo, <span id="successName">amigo</span>!</h3>
+                    <p>Recibimos tus datos. Te escribiremos por WhatsApp en menos de 24h para darte tu diagnóstico gratuito.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <a href="#hero" class="logo footer-logo">
+            <img src="assets/brand/zapynai-isotype.png" alt="ZapynAI" class="logo-mark">
+            ZapynAI
+        </a>
+        <p>Captación, embudos de venta, anuncios y automatización: todo en un solo sistema para conseguirte más clientes, citas y ventas.</p>
+
+        <div class="social-links">
+            <a href="https://instagram.com/zapynai" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+            <a href="https://facebook.com/zapynai" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+            </a>
+            <a href="https://linkedin.com/in/zapynaiofficial" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </a>
+            <a href="https://tiktok.com/@zapynai" target="_blank" rel="noopener" class="social-link" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13 3v11.5a3.5 3.5 0 1 1-3.5-3.5"></path>
+                    <path d="M13 7a4 4 0 0 0 4 4"></path>
+                </svg>
+            </a>
+            <a href="https://wa.me/34XXXXXXXXX" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
+                <svg viewBox="0 0 32 32" fill="currentColor" stroke="none">
+                    <path d="M16.004 3C9.377 3 4 8.377 4 15.004c0 2.65.86 5.1 2.32 7.094L4 29l7.084-2.278a11.93 11.93 0 0 0 4.92 1.04h.005c6.627 0 12.004-5.377 12.004-12.004C28.013 8.377 22.636 3 16.004 3zm0 21.81h-.004a9.77 9.77 0 0 1-4.98-1.365l-.357-.213-3.708 1.193 1.213-3.614-.232-.372a9.76 9.76 0 0 1-1.5-5.22c0-5.404 4.395-9.8 9.804-9.8 2.62 0 5.082 1.022 6.93 2.876a9.73 9.73 0 0 1 2.87 6.928c0 5.404-4.396 9.8-9.8 9.8zm5.36-7.34c-.293-.146-1.734-.856-2.003-.954-.27-.098-.466-.146-.662.147-.196.293-.76.954-.932 1.15-.172.196-.343.22-.636.073-.293-.147-1.236-.456-2.354-1.453-.87-.776-1.458-1.735-1.63-2.028-.172-.293-.018-.452.128-.598.132-.131.293-.343.44-.514.146-.172.195-.293.293-.49.098-.196.05-.367-.024-.514-.073-.147-.662-1.595-.908-2.184-.24-.575-.484-.497-.662-.506l-.564-.01c-.196 0-.514.073-.783.367-.27.293-1.03 1.006-1.03 2.454 0 1.448 1.054 2.847 1.2 3.043.146.196 2.073 3.165 5.022 4.438.702.303 1.25.484 1.677.62.704.224 1.345.192 1.852.117.565-.084 1.734-.708 1.978-1.392.244-.684.244-1.27.171-1.392-.073-.122-.268-.196-.562-.342z"></path>
+                </svg>
+            </a>
+        </div>
+
+        <span class="footer-copy">© 2026 ZapynAI. Todos los derechos reservados.</span>
+    </div>
+</footer>
+
+<a href="https://wa.me/34681800341?text=Hola%2C%20me%20interesa%20saber%20más%20sobre%20ZapynAI" target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat" aria-label="Chatea con nosotros por WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="white">
+        <path d="M16.004 3C9.377 3 4 8.377 4 15.004c0 2.65.86 5.1 2.32 7.094L4 29l7.084-2.278a11.93 11.93 0 0 0 4.92 1.04h.005c6.627 0 12.004-5.377 12.004-12.004C28.013 8.377 22.636 3 16.004 3zm0 21.81h-.004a9.77 9.77 0 0 1-4.98-1.365l-.357-.213-3.708 1.193 1.213-3.614-.232-.372a9.76 9.76 0 0 1-1.5-5.22c0-5.404 4.395-9.8 9.804-9.8 2.62 0 5.082 1.022 6.93 2.876a9.73 9.73 0 0 1 2.87 6.928c0 5.404-4.396 9.8-9.8 9.8zm5.36-7.34c-.293-.146-1.734-.856-2.003-.954-.27-.098-.466-.146-.662.147-.196.293-.76.954-.932 1.15-.172.196-.343.22-.636.073-.293-.147-1.236-.456-2.354-1.453-.87-.776-1.458-1.735-1.63-2.028-.172-.293-.018-.452.128-.598.132-.131.293-.343.44-.514.146-.172.195-.293.293-.49.098-.196.05-.367-.024-.514-.073-.147-.662-1.595-.908-2.184-.24-.575-.484-.497-.662-.506l-.564-.01c-.196 0-.514.073-.783.367-.27.293-1.03 1.006-1.03 2.454 0 1.448 1.054 2.847 1.2 3.043.146.196 2.073 3.165 5.022 4.438.702.303 1.25.484 1.677.62.704.224 1.345.192 1.852.117.565-.084 1.734-.708 1.978-1.392.244-.684.244-1.27.171-1.392-.073-.122-.268-.196-.562-.342z"></path>
+    </svg>
+</a>
+
+<button type="button" class="chat-trigger" id="chatTriggerBtn" aria-label="Abrir chat con Zapyn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+    </svg>
+    <span class="chat-trigger-badge" id="chatBadge">1</span>
+</button>
+
+<div class="chat-window" id="chatWindow">
+    <div class="chat-window-header">
+        <div class="chat-window-identity">
+            <div class="chat-window-avatar">Z</div>
+            <div>
+                <span class="chat-window-name">Zapyn</span>
+                <span class="chat-window-role">Agente de ZapynAI</span>
+            </div>
+        </div>
+        <div class="chat-window-actions">
+            <span class="chat-window-live"><i></i>En vivo</span>
+            <button type="button" class="chat-window-close" id="chatCloseBtn" aria-label="Cerrar chat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="chat-window-messages" id="chatMessages"></div>
+
+    <form class="chat-window-input" id="chatForm">
+        <input type="text" id="chatInputField" placeholder="Escribe tu mensaje..." autocomplete="off">
+        <button type="submit" class="chat-send-btn" aria-label="Enviar mensaje">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+        </button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

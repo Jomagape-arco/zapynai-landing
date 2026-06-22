@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZapynAI — Más clientes, más citas y más ventas para tu negocio</title>
+    <meta name="description" content="ZapynAI es la agencia que capta clientes, diseña embudos de venta, lanza tus anuncios y automatiza el seguimiento para que consigas más citas y más ventas.">
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="mobile-page">
+
+<header class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="mobile-back-link" aria-label="Volver al inicio">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Volver
+        </a>
+        <a href="index.html" class="logo">
+            <img src="assets/brand/zapynai-isotype.png" alt="ZapynAI" class="logo-mark">
+            ZapynAI
+        </a>
+    </div>
+</header>
+
+<section class="mobile-hero">
+    <div class="eyebrow reveal">
+        <span class="eyebrow-dot"></span>
+        Agencia de Captación, Ventas y Automatización
+    </div>
+
+    <h1 class="reveal" style="--delay: 0.08s">
+        Consigue más clientes, citas y ventas <span class="text-gradient">sin esfuerzo extra</span>
+    </h1>
+
+    <p class="reveal" style="--delay: 0.16s">
+        Diseñamos embudos de captación, lanzamos tus anuncios y automatizamos el seguimiento para que tu negocio venda más todos los días.
+    </p>
+
+    <a href="#mobileChat" class="btn-primary mobile-hero-cta reveal" style="--delay: 0.24s">
+        <span>Solicita tu diagnóstico gratuito</span>
+    </a>
+</section>
+
+<section class="mobile-chat-section" id="mobileChat">
+    <div class="mobile-chat-card">
+        <div class="chat-window-header">
+            <div class="chat-window-identity">
+                <div class="chat-window-avatar">Z</div>
+                <div>
+                    <span class="chat-window-name">Zapyn</span>
+                    <span class="chat-window-role">Agente de ZapynAI</span>
+                </div>
+            </div>
+            <span class="chat-window-live"><i></i>En vivo</span>
+        </div>
+
+        <div class="mobile-chat-messages" id="mobileChatMessages"></div>
+
+        <form class="chat-window-input" id="mobileChatForm">
+            <input type="text" id="mobileChatInputField" placeholder="Escribe tu mensaje..." autocomplete="off">
+            <button type="submit" class="chat-send-btn" aria-label="Enviar mensaje">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </form>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
