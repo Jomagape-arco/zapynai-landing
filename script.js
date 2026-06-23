@@ -23,7 +23,15 @@ REGLAS DE CONVERSACIÓN:
 
 8. Nunca insistas de forma agresiva. Si el cliente no quiere agendar todavía, sigue ayudándole con sus dudas sin presionar.
 
-Responde siempre en español.`;
+Responde siempre en español.
+
+FORMATO OBLIGATORIO:
+
+• Nunca uses asteriscos, negritas, listas numeradas ni markdown de ningún tipo
+• Máximo 2 frases por respuesta
+• Después de cada respuesta haz siempre una pregunta al cliente
+• Nunca sueltes toda la información de golpe
+• Escribe como si fuera un WhatsApp, corto y directo`;
 
 // ===== Navbar: blur/shadow on scroll =====
 const navbar = document.getElementById('navbar');
